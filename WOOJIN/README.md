@@ -11,7 +11,7 @@
     - Pandas, Numpy
     - Matplotlib
     - Scipy
-
+---
 ### 미국 수제 맥주 산업 분석과 신제품 포지셔닝
 - 설명: 미국의 수제 맥주 및 양조장 데이터를 분석하여 수제 맥주 산업을 이루는 요소들을 탐색하고, 가상의 신규 제품을 개발해 보는 과정을 수행
 - 사용한 데이터셋
@@ -25,3 +25,15 @@
     - Matplotlib, Seaborn
     - Scipy
     - Scikit-learn (KMeansClustering)
+---
+### 아디다스 미국 판매 데이터 분석 및 영업이익 제고 전략 수립
+- 설명: 미국에서 수집된 아디다스 판매 데이터를 바탕으로 영업이익을 제고하기 위한 판매 전략 수립
+- 사용한 데이터셋
+    - [Adidas Sales Dataset](https://www.kaggle.com/datasets/heemalichaudhari/adidas-sales-dataset/data): 아디다스 판매 유닛 수, 총 판매 수익, 판매 위치, 판매된 제품의 유형, 기타 다른 관련 정보들을 담은 데이터셋
+- 진행 절차 및 내용
+    - 데이터 로딩, 컬럼별 EDA
+    - 영업이익 제고를 위한 가설 설정, **t-test**
+- 사용한 스킬셋
+    - pandas
+    - matplotlib, seaborn
+    - scipy
