@@ -1,5 +1,12 @@
-# 안녕하세요 반갑습니다. 
-## DAStudy
-
-
-### 박송이입니다. 
+### 호텔 리뷰 데이터를 활용한 
+- 설명: 유저가 계좌 이용을 계속할지, 혹은 해지할지를 예측하는 이진 분류 Kaggle Competition
+- 사용한 데이터셋
+    - Binary Classification with a Bank Churn Dataset(Playground Series - Season 4, Episode 1)
+- 진행 절차 및 내용
+    - 컬럼별 EDA, 특성에 맞는 전처리 및 스케일링
+    - 분류 모델 비교, 적합한 모델 선정, 하이퍼파라미터 튜닝
+    - Kaggle Competition 제출
+- 사용한 스킬셋
+    - pandas
+    - matplotlib, seaborn
+    - scikit-learn
