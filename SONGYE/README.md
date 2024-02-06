@@ -11,6 +11,16 @@
 - langdetect의 detect 함수를 이용해 텍스트의 언어를 추출하고 영어로 된 데이터만 사용
 - TfidfVectorizer를 이용해 의미없이 반복적으로 출현하는 단어를 제외하고 중요도가 높은 단어만 시각화
 #### 240204 : 분류 모델 개발
+- 'text', 'ratings_overall'를 제외한 나머지 칼럼들 제거 및 [1.0,2.0,3.0]-> 'low, [4.0,5.0]->high로 라벨링
+- sample을 이용해 라벨링 불균형 문제 해결 low 데이터 5000개 high 데이터 5000개로 sampling
+- **토큰화** tensorflow.keras.preprocessing.text의 text_to_word_sequence를 이용해 토큰화
+- nltk.corpus의 stopwords 이용해 불용어 제거 및 길이 3이상인 남어만 남김
+- keras.preprocessing.sequence의 pad_sequences를 이용해 패딩처리
+- **Glove**의 6B embedding_size=100을 이용해 임베딩 처리
+- sklearn.model_selection의 train_test_split 이용해 학습-테스트 데이터 분리
+- **LogisticRegression**, **RandomForestClassifier** 모델을 이용해 모델 학습
+- **GridSearchCV**, **RandomizedSearchCV** 를 이용해 최적의 하이퍼파라미터 탐색
+- 
 #### 240218 : ML과 DL을 활용한 분류 모델 개발 및 추천시스템 개발
 
 
