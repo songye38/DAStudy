@@ -1,8 +1,3 @@
 /dataset/
-240204/vector_cache/*
-240218/vector_cache/*
-240204/.vector_cache/*
-240218/.vector_cache/*
-Embedding_model/*
 240204/Embedding_model/*
 240218/Embedding_model/*
