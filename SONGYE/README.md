@@ -1,4 +1,4 @@
-## 호텔 리뷰 데이터를 활용한 분류 모델 개발
+## [PROJECT_1] 호텔 리뷰 데이터를 활용한 분류 모델 개발
 - 설명: 유저가 계좌 이용을 계속할지, 혹은 해지할지를 예측하는 이진 분류 Kaggle Competition
 ### 사용한 데이터셋
     - Binary Classification with a Bank Churn Dataset(Playground Series - Season 4, Episode 1)
@@ -23,17 +23,12 @@
 #### 모델 적용
 - **LogisticRegression**, **RandomForestClassifier** 모델을 이용해 모델 학습
 - **GridSearchCV**, **RandomizedSearchCV** 를 이용해 최적의 하이퍼파라미터 탐색
-- 
-#### 240218 : ML과 DL을 활용한 분류 모델 개발 및 추천시스템 개발
 
 
 
-
-    - 컬럼별 EDA, 특성에 맞는 전처리 및 스케일링
-    - 분류 모델 비교, 적합한 모델 선정, 하이퍼파라미터 튜닝
-    - Kaggle Competition 제출
-    
-- 사용한 스킬셋
-    - pandas
-    - matplotlib, seaborn
-    - scikit-learn
+## [PROJECT_2] 심혈관계 데이터셋을 이용한 비만 위험도 예측 모델 개발
+- 설명: Note: This dataset is particularly well suited for visualizations, clustering, and general EDA. Show off your skills!
+### 사용한 데이터셋
+    - Multi-Class Prediction of Obesity Risk
+### 날짜별 진행내용
+#### 240225 : 데이터 탐색 및 시각화
