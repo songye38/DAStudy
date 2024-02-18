@@ -29,9 +29,9 @@
 - **FastText**  임베딩 처리 + LR model -> Validation Accuracy: 0.7033333333333334
 
 #### tf.keras.layers.Embedding 이용 + LSTM
-|maxlen|vocab_size|word_vector_dim|last|epoch|batch_size|결과|
-|------|----------|---------------|----|-----|----------|----|
-|444|10000|16|8|10|128|235/235 - 7s - loss: 0.8098 - accuracy: 0.5075 - 7s/epoch - 31ms/step|
+|No.|maxlen|vocab_size|word_vector_dim|last|epoch|batch_size|결과|
+|----|------|----------|---------------|----|-----|----------|----|
+|1.|444|10000|16|8|10|128|loss: 0.8098 - accuracy: 0.5075|
 
 
 #### Word2Vec 임베딩 + LSTM  
