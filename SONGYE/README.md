@@ -19,18 +19,22 @@
 - keras.preprocessing.sequence의 pad_sequences를 이용해 패딩처리
 
 #### 임베딩 및 데이터셋 분리
-- **Glove**의 6B embedding_size=100을 이용해 임베딩 처리 -> Validation Accuracy: 0.4886666666666667
-- **from gensim.models import Word2Vec**를 이용한 임베딩 처리 -> Validation Accuracy: 0.7013333333333334
-- **from gensim.models import FastText**를 이용한 임베딩 처리 -> Validation Accuracy: 0.7033333333333334
+- **Glove**의 6B embedding_size=100을 이용해 임베딩 처리
+- **from gensim.models import Word2Vec**를 이용한 임베딩 처리
+- **from gensim.models import FastText**를 이용한 임베딩 처리
 
 #### LogisticRegression 모델 적용한 결과
 - **Glove** 임베딩 처리 + LR model -> Validation Accuracy: 0.4886666666666667
 - **Word2Vec** 임베딩 처리 + LR model -> Validation Accuracy: 0.7013333333333334
 - **FastText**  임베딩 처리 + LR model -> Validation Accuracy: 0.7033333333333334
 
-#### 기본 LSTM 모델 적용 결과
-- tf.keras.layers.Embedding 이용 + LSTM -> 
-- Word2Vec 임베딩 + LSTM -> 
+#### tf.keras.layers.Embedding 이용 + LSTM
+|maxlen|vocab_size|word_vector_dim|last|epoch|batch_size|결과|
+|------|----------|---------------|----|-----|----------|----|
+|444|10000|16|8|10|128|235/235 - 7s - loss: 0.8098 - accuracy: 0.5075 - 7s/epoch - 31ms/step|
+
+
+#### Word2Vec 임베딩 + LSTM  
 
 
 <br />
