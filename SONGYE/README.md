@@ -17,14 +17,23 @@
 - **토큰화** tensorflow.keras.preprocessing.text의 text_to_word_sequence를 이용해 토큰화
 - nltk.corpus의 stopwords 이용해 불용어 제거 및 길이 3이상인 남어만 남김
 - keras.preprocessing.sequence의 pad_sequences를 이용해 패딩처리
+
 #### 임베딩 및 데이터셋 분리
-- **Glove**의 6B embedding_size=100을 이용해 임베딩 처리
-- sklearn.model_selection의 train_test_split 이용해 학습-테스트 데이터 분리
-#### 모델 적용
-- **LogisticRegression**, **RandomForestClassifier** 모델을 이용해 모델 학습
-- **GridSearchCV**, **RandomizedSearchCV** 를 이용해 최적의 하이퍼파라미터 탐색
+- **Glove**의 6B embedding_size=100을 이용해 임베딩 처리 -> Validation Accuracy: 0.4886666666666667
+- **from gensim.models import Word2Vec**를 이용한 임베딩 처리 -> Validation Accuracy: 0.7013333333333334
+- **from gensim.models import FastText**를 이용한 임베딩 처리 -> Validation Accuracy: 0.7033333333333334
+
+#### LogisticRegression 모델 적용한 결과
+- **Glove** 임베딩 처리 + LR model -> Validation Accuracy: 0.4886666666666667
+- **Word2Vec** 임베딩 처리 + LR model -> Validation Accuracy: 0.7013333333333334
+- **FastText**  임베딩 처리 + LR model -> Validation Accuracy: 0.7033333333333334
+
+#### 기본 LSTM 모델 적용 결과
+- tf.keras.layers.Embedding 이용 + LSTM -> 
+- Word2Vec 임베딩 + LSTM -> 
 
 
+<br />
 
 ## [PROJECT_2] 심혈관계 데이터셋을 이용한 비만 위험도 예측 모델 개발
 - 설명: Note: This dataset is particularly well suited for visualizations, clustering, and general EDA. Show off your skills!
