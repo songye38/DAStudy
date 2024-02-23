@@ -23,18 +23,18 @@
 - **from gensim.models import Word2Vec**를 이용한 임베딩 처리
 - **from gensim.models import FastText**를 이용한 임베딩 처리
 
-#### LogisticRegression 모델 적용한 결과
+#### **ML**LogisticRegression 모델 적용한 결과
 - **Glove** 임베딩 처리 + LR model -> Validation Accuracy: 0.4886666666666667
 - **Word2Vec** 임베딩 처리 + LR model -> Validation Accuracy: 0.7013333333333334
 - **FastText**  임베딩 처리 + LR model -> Validation Accuracy: 0.7033333333333334
 
-#### tf.keras.layers.Embedding 이용 + LSTM
-|No.|maxlen|vocab_size|word_vector_dim|last|epoch|batch_size|결과|
+#### **DL**tf.keras.layers.Embedding 이용 + LSTM
+|No.|maxlen|vocab_size|word_vector_dim|lstm_size|epoch|batch_size|결과|
 |----|------|----------|---------------|----|-----|----------|----|
 |1.|444|10000|16|8|10|128|loss: 0.8098 - accuracy: 0.5075|
 
 
-#### Word2Vec 임베딩 + LSTM  
+#### **DL** Word2Vec 임베딩 + LSTM  
 
 
 <br />
